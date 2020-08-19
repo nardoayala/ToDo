@@ -1,0 +1,17 @@
+.todo {
+  &__title {
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    gap: 10px;
+    &__input {
+      flex-basis: 85%;
+      padding-left: 10px;
+    }
+    &__add-button {
+      flex-basis: 15%;
+      padding: 8px;
+    }
+  }
+}

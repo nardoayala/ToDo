@@ -45,7 +45,7 @@ const listControls = () => {
         event.preventDefault()
         document.activeElement.blur()
         const itemId = event.target.parentNode.parentNode.id - 1
-        const itemValue = vent.target.innerText
+        const itemValue = event.target.innerText
         const currentTodoList = JSON.parse(
           window.localStorage.getItem("todoItems")
         )

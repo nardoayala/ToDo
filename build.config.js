@@ -1,6 +1,6 @@
 const path = require("path")
 const HmtlWebpackPlugin = require("html-webpack-plugin")
-const webpack = require("webpack")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
   entry: path.resolve(__dirname, "src/index.js"),
@@ -18,7 +18,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -36,7 +36,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin(),
     new HmtlWebpackPlugin({
       title: "ToDo List",
       template: path.resolve(__dirname, "index.html"),

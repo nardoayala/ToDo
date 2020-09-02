@@ -1,11 +1,11 @@
 {
-  "name": "12-to-do-list",
+  "name": "to-do-list",
   "version": "1.0.0",
-  "description": "A ToDo list made with vanilla JavaScript",
+  "description": "A ToDo app built with vanilla JavaScript",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --config build.config.js"
   },
   "author": "Bernardo Ayala <ba@bernardoayala.com>",
   "license": "MIT",

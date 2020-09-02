@@ -12,6 +12,10 @@
     &__add-button {
       flex-basis: 15%;
       padding: 8px;
+      outline: none;
     }
+  }
+  &__clear-button {
+    outline: none;
   }
 }
